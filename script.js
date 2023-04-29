@@ -1,5 +1,7 @@
-let slideIndex = 1;
-showSlides(slideIndex);
+window.onload = function showSlide() {
+  let slideIndex = 0;
+  showSlides(slideIndex);
+}
 
 // Next/previous controls
 function plusSlides(n) {
@@ -17,6 +19,7 @@ function showSlides(n) {
   let dots = document.getElementsByClassName("dot");
   if (n > slides.length) {slideIndex = 1}
   if (n < 1) {slideIndex = slides.length}
+  if (n = 0) {slideIndex = 1}
   for (i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";
   }
