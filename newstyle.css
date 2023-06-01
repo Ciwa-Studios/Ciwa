@@ -5,7 +5,7 @@
     font-family: 'Poppins', sans-serif;
 }
 body{
-    background: rgb(158, 160, 30);
+
 }
 
 header{
@@ -13,16 +13,19 @@ header{
     top: 0;
     left: 0;
     width: 100%;
-    padding: 25px 100px;
+    padding: 25px 85px;
     background: transparent;
     display: flex;
     justify-content: space-between;
     align-items: center;
     z-index: 99;
     border-bottom: solid 1px;
+    box-shadow: 0 0 30px rgba(0,0,0,.5);
+    backdrop-filter: blur(17px);
 }
 
 .logo{
+
     height: auto;
     width: 3cm;
     color: #fff;
