@@ -4,8 +4,9 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
-body{
 
+body{
+background: black;
 }
 
 header{
@@ -14,30 +15,28 @@ header{
     left: 0;
     width: 100%;
     padding: 25px 85px;
-    background: transparent;
+    background: rgba(255, 255, 255, 0.599);
     display: flex;
     justify-content: space-between;
     align-items: center;
     z-index: 99;
-    border-bottom: solid 1px;
     box-shadow: 0 0 30px rgba(0,0,0,.5);
     backdrop-filter: blur(17px);
 }
 
 .logo{
-
     height: auto;
     width: 3cm;
-    color: #fff;
 }
 
 .navigation a{
     position: relative;
     font-size: 1.1em;
-    color: #fff;
+    color: #000000;
     text-decoration: none;
     font-weight: 500;
     margin-left: 45px;
+    border: #000000 10px;
 }
 
 .navigation a::after{
@@ -47,15 +46,34 @@ header{
     bottom: -5px;
     width: 100%;
     height: 4px;
-    background: #fff;
+    background: #3b160477;
     border-radius: 6px;
     transform-origin: right;
     transform: scaleX(0);
     transition: transform .4s
-
 }
 
 .navigation a:hover::after{
     transform-origin: left;
     transform: scaleX(1);
+}
+
+.try{
+    height: 20cm;
+    width: 39.19cm;
+    border: 5px;
+}
+
+.try1{
+    height: auto;
+    width: 10cm;
+    margin: 0;
+}
+
+.try2{
+    height: auto;
+    width: 10cm;
+    margin: 0;
+    float: right;
+    object-position:right;
 }
